@@ -1,0 +1,46 @@
+* {
+    background-color: #141823;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 96px;
+}
+
+div,
+label {
+    background-color: #1d212c;
+}
+
+.new-task {
+    background-color: #141823;
+    padding-block: 16px;
+}
+
+label,
+button,
+.new-task input {
+    color: #ffffff;
+}
+
+.new-task input {
+    background-color: #1d212c;
+    border: 2px solid #1d212c;
+    border-radius: 4px;
+    padding: 8px;
+    outline: none;
+}
+
+.new-task input[type=text]:focus {
+    border: 2px solid #03c032;
+}
+
+header {
+    padding-block: 16px;
+}
+header h1 {
+    color: #03c032;
+}
