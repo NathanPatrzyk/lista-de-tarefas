@@ -7,40 +7,95 @@
 }
 
 body {
-    margin: 96px;
+    max-width: 50vw;
+    max-height: 80vw;
+    margin: 32px auto;
 }
 
-div,
-label {
+header,
+.new-task,
+.task {
+    display: flex;
+}
+
+header,
+.new-task {
+    padding: 16px;
+    max-width: 400px;
+    justify-content: left;
+}
+
+header h1 {
+    color: #03c032;
+}
+
+div {
     background-color: #1d212c;
 }
 
 .new-task {
     background-color: #141823;
-    padding-block: 16px;
+    gap: 16px;
 }
 
-label,
-button,
-.new-task input {
+.new-task input,
+.new-task button {
     color: #ffffff;
 }
 
 .new-task input {
     background-color: #1d212c;
-    border: 2px solid #1d212c;
+    border: 1px solid #1d212c;
     border-radius: 4px;
     padding: 8px;
     outline: none;
+    font-size: 16px;
+    flex-grow: 2;
 }
 
 .new-task input[type=text]:focus {
-    border: 2px solid #03c032;
+    border: 1px solid #03c032;
 }
 
-header {
-    padding-block: 16px;
+.new-task button,
+.new-task button svg{
+    background-color: #03c032;
 }
-header h1 {
-    color: #03c032;
+
+.new-task button{
+    border-radius: 4px;
+    padding: 4px;
+    width: 39px;
+    height: 39px;
+    border: none;
+}
+
+.new-task button:hover{
+    opacity: 0.9;
+}
+
+.new-task button:focus{
+    opacity: 0.8;
+}
+
+.new-task button svg{
+    width: 31px;
+    height: 31px;
+}
+
+.task{
+    justify-content: center;
+}
+
+.task p{
+    background-color: #1d212c;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 650px) {
+    body {
+        max-width: 90vw;
+        margin: 96px auto;
+        max-height: 80vw;
+    }
 }
