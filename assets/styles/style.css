@@ -4,120 +4,95 @@
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body,
-.new-task,
-.tasks {
+body {
     background-color: #0f172a;
-}
-body,
-.new-task {
+    margin: 32px auto;
     max-width: 432px;
 }
-body {
-    margin: 32px auto;
-}
-div,
-.new-task input {
-    background-color: #1e293b;
-}
-header,
-.new-task,
-.tasks,
-.task {
-    display: flex;
-    gap: 16px;
-}
-header,
-.tasks {
-    max-width: 400px;
-}
-header,
-.new-task,
-.task {
+header{
     padding: 16px;
+    max-width: 400px;
 }
 header h1 {
     color: #22c55e;
 }
-.new-task input,
-.new-task button,
-.task span,
-.task p {
-    color: #ffffff;
+.new-task {
+    padding: 16px;
+    max-width: 432px;
+    display: flex;
+    gap: 16px;
 }
-.new-task input,
-.new-task button,
-.task {
-    border: 2px solid #1e293b;
-}
-.new-task input,
-.new-task button,
-.task {
-    border-radius: 4px;
-}
-.new-task input { 
+.new-task input {
     font-size: 16px;
+    color: #ffffff;
+    background-color: #1e293b;
     padding: 8px;
+    border-radius: 4px;
+    border: 2px solid #1e293b;
     outline: none;
     flex-grow: 2;
 }
-.new-task input[type=text]:focus,
-.task.done:hover {
+.new-task input[type=text]:focus {
     border: 2px solid #22c55e;
 }
-.new-task button,
-.new-task button svg{
+.new-task button {
+    color: #ffffff;
     background-color: #22c55e;
-}
-.new-task button{
     padding: 4px;
+    border-radius: 4px;
+    border: none;
     width: 39px;
     height: 39px;
-    border: none;
 }
-
 .new-task button:hover{
     opacity: 0.9;
 }
-
 .new-task button:focus{
     opacity: 0.8;
 }
-
 .new-task button svg{
+    background-color: #22c55e;
     width: 31px;
     height: 31px;
 }
-
-.tasks{
+.tasks {
+    background-color: #0f172a;
     margin: 16px;
-    
-    
+    display: flex;
+    gap: 16px;
     flex-direction: column;
+    max-width: 400px;
 }
-
-.task{
+.tasks .task {
+    background-color: #1e293b;
+    padding: 16px;
+    border-radius: 4px;
+    border: 2px solid #1e293b;
     border-left: 4px solid #f97316;
+    display: flex;
+    gap: 16px;
 }
-
-.task:hover{
+.tasks .task span {
+    color: #ffffff;
+    background-color: #1e293b;
+}
+.tasks .task p {
+    color: #ffffff;
+    background-color: #1e293b;
+}
+.tasks .task:hover{
     border: 2px solid #f97316;
     border-left: 4px solid #f97316;
+    opacity: 0.8;
 }
-
 .task.done{
     border-left: 4px solid #22c55e;
 }
-
-.task.done:hover{
+.task.done:hover {
+    border: 2px solid #22c55e;
     border-left: 4px solid #22c55e;
+    opacity: 0.8;
 }
-
-.task p,
-.task span{
-    background-color: #1e293b;
-}
-
 @media screen and (max-width: 650px) {
     body {
         margin: 96px auto;
