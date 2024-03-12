@@ -68,7 +68,7 @@ header h1 {
     padding: 16px;
     border-radius: 4px;
     border: 2px solid #1e293b;
-    border-left: 4px solid #f97316;
+    border-left: 4px solid #64748b;
     display: flex;
     gap: 16px;
 }
@@ -82,10 +82,11 @@ header h1 {
 .tasks .task p {
     color: #ffffff;
     background-color: #1e293b;
+    flex-grow: 2;
 }
 .tasks .task:hover{
-    border: 2px solid #f97316;
-    border-left: 4px solid #f97316;
+    border: 2px solid #64748b;
+    border-left: 4px solid #64748b;
 }
 .task.done{
     border-left: 4px solid #22c55e;
