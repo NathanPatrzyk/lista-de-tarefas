@@ -76,6 +76,9 @@ header h1 {
     color: #ffffff;
     background-color: #1e293b;
 }
+.tasks .task span:hover{
+    opacity: 0.8;
+}
 .tasks .task p {
     color: #ffffff;
     background-color: #1e293b;
@@ -83,7 +86,6 @@ header h1 {
 .tasks .task:hover{
     border: 2px solid #f97316;
     border-left: 4px solid #f97316;
-    opacity: 0.8;
 }
 .task.done{
     border-left: 4px solid #22c55e;
@@ -91,7 +93,6 @@ header h1 {
 .task.done:hover {
     border: 2px solid #22c55e;
     border-left: 4px solid #22c55e;
-    opacity: 0.8;
 }
 @media screen and (max-width: 650px) {
     body {
