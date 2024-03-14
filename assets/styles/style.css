@@ -24,7 +24,8 @@ input[type=text]:focus {
 }
 header{
     padding: 16px;
-    max-width: 400px;
+    display: flex;
+    justify-content: center;
 }
 header h1 {
     color: #22c55e;
@@ -99,6 +100,7 @@ header h1 {
     border-left: 4px solid #22c55e;
 }
 .tasks .task input {
+    background-color: #0f172a;
     font-size: 16px;
     line-height: 28px;
     padding: 0;
@@ -106,6 +108,29 @@ header h1 {
     border: none;
     flex-grow: 2;
     max-height: 28px;
+}
+.tasks .task .opacity-0,
+.tasks .task .opacity-0:hover {
+    opacity: 0;
+}
+.filter-tasks{
+    color: #ffffff;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+.filter-tasks button{
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #0f172a;
+    border: none;
+}
+.filter-tasks button:hover{
+    opacity: 0.9;
+}
+.filter-tasks button:focus{
+    opacity: 0.8;
 }
 @media screen and (max-width: 650px) {
     body {
